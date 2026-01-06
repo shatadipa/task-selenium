@@ -9,8 +9,7 @@ package com.fbn.utils;
 public abstract class Config {
     private Config(){}
 
-    public static final String BASE_URL = "http://128.251.99.120/obnadminportal";
-    public static final String LOGIN_URL = "/login";
-
+    public static final String BASE_URL = "http://128.251.99.120/obnadminportal/login";
+    
     public static final int TIMEOUT_IN_SECONDS = 10;
 }

@@ -8,12 +8,15 @@ public class LoginPage extends BasePage{
     // All locators should ideally be private.
     // Actions performed from tests should use public methods and not the locators directly.
     private By countrySelect = By.cssSelector(".mat-form-field-infix:has(*[formcontrolname='country'])");
-    private String countryOptionFormat = ".mat-option:has(img[src*=%s])";
     private By userNameTextInput = By.cssSelector("input[formcontrolname='userName']");
     private By pinTextInput = By.cssSelector("input[formcontrolname='pin']");
     private By tokenTextInput = By.cssSelector("input[formcontrolname='token']");
     private By loginButton = By.className("login-btn");
     private By toastContainer = By.id("toast-container");
+
+    // Country option locator is stored as a string as
+    // this is a dynamic locator where %s value is replaced by the actual country code
+    private String countryOptionFormat = ".mat-option:has(img[src*=%s])";
 
     /**
      * This method selects the country from the dropdown
@@ -43,6 +46,10 @@ public class LoginPage extends BasePage{
         click(loginButton);
     }
 
+    /**
+     * Gets the message from toast notification on page when a login error happens.
+     * @return the error message text
+     */
     public String getToastMessage(){
         return driver.findElement(toastContainer).getText();
     }
