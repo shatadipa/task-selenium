@@ -12,5 +12,5 @@ public abstract class Config {
     public static final String BASE_URL = "http://128.251.99.120/obnadminportal";
     public static final String LOGIN_URL = "/login";
 
-    public static final int TIMEOUT_IN_SECONDS = 30;
+    public static final int TIMEOUT_IN_SECONDS = 10;
 }
