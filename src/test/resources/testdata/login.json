@@ -1,0 +1,14 @@
+{
+  "validUser": {
+    "country": "DRC",
+    "username": "CEVA_MAKER",
+    "password": "Bank12!@",
+    "token": "12345678"
+  },
+  "invalidUser": {
+    "country": "DRC",
+    "username": "CEVA_MAKER",
+    "password": "Bank12!@",
+    "token": "12345678"
+  }
+}
