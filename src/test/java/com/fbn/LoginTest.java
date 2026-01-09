@@ -44,6 +44,6 @@ public class LoginTest extends BaseTest{
         // But during test automation the account was locked hence I have put in
         // this message to run and verify the automation code.
         Assert.assertEquals(loginPage.getToastMessage(),
-                "User Locked please contact Admin for reactivation");
+                "Incorrect username or password");
     }
 }
